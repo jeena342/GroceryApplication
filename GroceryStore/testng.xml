@@ -8,9 +8,9 @@
 	<test thread-count="5" name="Test">
 		<classes>
 
-			<class name="testscript.AdminUserTest">
+			<class name="testscript.LoginTest">
 				<methods>
-					<include name="verifyWhetherTheAdminAbleToAddNewUser"></include>
+					<include name="verifyLoginWithValidCredentials"></include>
 				</methods>
 			</class>
 			<!--excude for exclude a test case, extend report - it is a coustomize detailed report-->

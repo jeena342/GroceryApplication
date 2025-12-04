@@ -21,5 +21,5 @@
     </classes>
   </test> 
 </suite> <!-- Suite -->
-flapkey test case= testcase can be fail because of network issue and can pass if network ok- providing muttiple execution chance is retry mechanisum
-dataprovider= exceland hardcode,  annotation provided by testng
+<!--flapkey test case= testcase can be fail because of network issue and can pass if network ok- providing muttiple execution chance is retry mechanisum
+dataprovider= exceland hardcode,  annotation provided by testng-->

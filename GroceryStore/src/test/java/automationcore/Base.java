@@ -11,12 +11,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import constants.Constants;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utility.ScreenShotUtility;
 
 public class Base {
 		Properties pro;
@@ -48,16 +50,37 @@ public class Base {
 			
 			
 		}
-		@AfterMethod(alwaysRun= true)
+		/*@AfterMethod(alwaysRun= true)
 		public void closeBrowser()
 		{
+			
+			if (iTestResult.getStatus() == ITestResult.FAILURE) {
+
+				ScreenShotUtility screenShot = new ScreenShotUtility();
+				screenShot.getScreenshot(driver, iTestResult.getName());//passes driver and method name
+				}
+			
+
+				
 			//driver.close();//current tab closes
 			//driver.quit();// closes all the tab
+		}*/
+		@AfterMethod(alwaysRun = true)
+		public void closeBrowser(ITestResult iTestResult) throws IOException {
+		    
+		    if (iTestResult.getStatus() == ITestResult.FAILURE) {
+
+		        ScreenShotUtility screenShot = new ScreenShotUtility();
+		        screenShot.getScreenshot(driver, iTestResult.getName());
+		    }
+
+		    //driver.quit();
+		}
 		}
 		// to run through pom rightclick pom execute pom clean and pom install
 		//maven compiler , maven su
 		//lombok- dependency to execute with pom
 		//to execute with cammand prompt-right click with project , show in, system explorer, open project, copy the path , type cmd, in cmd type mvn clean, and mvn install  
-	}
+	
 
 

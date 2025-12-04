@@ -11,6 +11,7 @@ import com.aventstack.extentreports.Status;
 
 import utility.ExtentReportUtility;
 
+
 public class Listners implements ITestListener {
 	// actual name is itestlistner
 	ExtentTest test;//predefined class 
@@ -42,7 +43,7 @@ public class Listners implements ITestListener {
 	WebDriver driver = null;
 
 	String testMethodName = result.getMethod().getMethodName();
-
+	
 	try {
 
 	driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver")
@@ -64,6 +65,11 @@ public class Listners implements ITestListener {
 	try {
 	driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver")
 	.get(result.getInstance());
+	String screenshotPath = null;
+	
+	
+
+    extentTest.get().addScreenCaptureFromPath(screenshotPath);
 	} catch (Exception e) {
 	}
 	}

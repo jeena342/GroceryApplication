@@ -13,7 +13,7 @@ public class ExtentReportUtility {
 	extentReports.setSystemInfo("Organization", "Obsqura");
 	extentReports.setSystemInfo("Name", "Jeena"); // provides context of the report
 	return extentReports;
-	//extentReportUtility configure with in lisoner
+	//extentReportUtility configure with in listner
 	}
 
 }
