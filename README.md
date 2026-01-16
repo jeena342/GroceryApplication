@@ -4,58 +4,60 @@
 
 This project is a **UI automation testing framework** developed using **Java and Selenium WebDriver**, following a modular and maintainable test design.
 
-The framework supports:
+## **The framework supports:**
 
-Cross-browser testing
-Parallel execution
-Test grouping
-Automated reporting using Extent Reports
+- Cross-browser testing
+- Parallel execution
+- Test grouping
+- Automated reporting using Extent Reports
 
-## Technologies Used
+## **Technologies Used**
 
-Java
-Selenium WebDriver
-TestNG
-Maven
-Extent Reports
+- Java
+- Selenium WebDriver
+- TestNG
+- Maven
+- Extent Reports
 
-## Automated Test Scenarios
-### LoginTest
+## **Automated Test Scenarios**
+*LoginTest*
 
 Verify login functionality using valid credentials
 Validate successful redirection after login
 
-### HomeTest
+*HomeTest*
 
 Verify home page UI elements
 Validate navigation links and dashboard visibility
 
-### AdminUserTest
+*AdminUserTest*
 
 Validate admin user functionalities
 Verify role-based access controls
 
-### ManageNewsTest
+*ManageNewsTest*
 
 Validate news management features
 Verify add, update, and delete operations
 
-## Reporting
+## **Reporting**
 
-### Extent Reports are generated after execution
--extent-reports/extent-report.html
-### Screenshots captured automatically on failures
+## **Extent Reports are generated after execution**
+- extent
+- reports/extent
+- report.html
+## **Screenshots captured automatically on failures**
 
-## TestNG Features Used
+## **TestNG Features Used**
 
--Cross-browser execution
--Parallel execution
--Group-based test execution
--XML-driven test control
+- Cross-browser execution
+- Parallel execution
+- Group-based test execution
+- XML-driven test control
 
-## Best Practices Followed
+## **Best Practices Followed**
 
--Page Object Model (POM)
--Reusable utilities and constants
--Centralized configuration
--Clean and maintainable test code
+- Page Object Model (POM)
+- Reusable utilities and constants
+- Centralized configuration
+- Clean and maintainable test code
