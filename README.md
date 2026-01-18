@@ -1,4 +1,4 @@
-# GroceryApplication
+# Java-Selenium-WebDriver-UI-Automation
 
 ## Project Overview
 
