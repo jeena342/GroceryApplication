@@ -50,21 +50,7 @@ public class Base {
 			
 			
 		}
-		/*@AfterMethod(alwaysRun= true)
-		public void closeBrowser()
-		{
-			
-			if (iTestResult.getStatus() == ITestResult.FAILURE) {
-
-				ScreenShotUtility screenShot = new ScreenShotUtility();
-				screenShot.getScreenshot(driver, iTestResult.getName());//passes driver and method name
-				}
-			
-
-				
-			//driver.close();//current tab closes
-			//driver.quit();// closes all the tab
-		}*/
+		
 		@AfterMethod(alwaysRun = true)
 		public void closeBrowser(ITestResult iTestResult) throws IOException {
 		    

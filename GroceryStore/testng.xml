@@ -8,9 +8,10 @@
 	<test thread-count="5" name="Test">
 		<classes>
 
-			<class name="testscript.LoginTest">
+			<class name="testscript.ManageContactTest">
+			
 				<methods>
-					<include name="verifyLoginWithValidCredentials"></include>
+					<include name="verifyWhetherAddressAndNamePrinting"></include>
 				</methods>
 			</class>
 			<!--excude for exclude a test case, extend report - it is a coustomize detailed report-->

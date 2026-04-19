@@ -32,7 +32,7 @@ public class Listners implements ITestListener {
 	extentTest.get().log(Status.PASS, "Test Passed");
 
 	}
-// execute when a testcase failes
+// execute when a testcase fail 
 	public void onTestFailure(ITestResult result) {
 
 	ITestListener.super.onTestFailure(result);

@@ -22,7 +22,7 @@ import utility.RandomDataUtility;
 public class AdminUserTest extends Base{
 	AdminUserPage adminuserpage;
 	HomePage home;
-	@Test( description="User is trying to create a  new user")
+	@Test( description="User is trying to create a new user")
 	public void verifyWhetherTheAdminAbleToAddNewUser() throws IOException {
 		String usernamevalue= ExcelUtility.readStringData(1,0,"LoginPage");
 		String passwordvalue= ExcelUtility.readStringData(1,1,"LoginPage");

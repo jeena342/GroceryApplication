@@ -6,13 +6,26 @@
     <classes>
       <class name="testscript.LoginTest">
         <methods>
-          <include name="verifyLoginWithInvalidpassword"/>
-          <include name="verifyLoginWithInvalidUsername"/>
           <include name="browserInitialisation"/>
           <include name="closeBrowser"/>
+          <include name="verifyLoginWithInvalidUsernameValidpassword"/>
           <include name="verifyLoginWithInvalidCredentials"/>
+          <include name="verifyLoginWithInvalidpasswordValidusername"/>
+          <include name="verifyLoginWithValidCredentials"/>
         </methods>
       </class> <!-- testscript.LoginTest -->
     </classes>
   </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="classes" name="Test2(failed)">
+    <parameter name="browsers" value="Firefox"/>
+    <classes>
+      <class name="testscript.HomeTest">
+        <methods>
+          <include name="browserInitialisation"/>
+          <include name="closeBrowser"/>
+          <include name="verifyWhetherTHeUSerAbleToSuccessfullyLogout"/>
+        </methods>
+      </class> <!-- testscript.HomeTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [parallel] -->
